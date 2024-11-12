@@ -28,6 +28,9 @@ jobs:
       - name: Copy frontend build to backend
         run: cp -r ./puhelinluettelo/dist ./dist
 
+      - name: Install backend dependencies
+        run: npm install
+
       - name: Check style
         run: npm run lint
 
